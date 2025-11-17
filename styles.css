@@ -1,4 +1,4 @@
-/* Base styling */
+/* Modern fancy style */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background: #f4f7f8;
@@ -63,6 +63,14 @@ main {
 h2 {
   margin-top: 0;
   color: #007acc;
+}
+
+h3 {
+  margin-bottom: 0.3em;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 a.btn {
