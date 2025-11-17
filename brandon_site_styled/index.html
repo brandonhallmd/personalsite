@@ -4,28 +4,183 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Brandon Hall</title>
-<link rel="stylesheet" href="styles.css">
+<style>
+/* ----- Modern Professional Single-page Style ----- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f0f3f7;
+  color: #1a1a1a;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0a3d62;
+  display: inline-block;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #0a3d62;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #0077cc;
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+section {
+  background: #fff;
+  padding: 35px 40px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #0077cc;
+  border-bottom: 2px solid #e0e6ed;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #0a3d62;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+a.btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 12px 20px;
+  background: #0077cc;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+a.btn:hover {
+  background: #005fa3;
+  transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    margin-left: 15px;
+  }
+  header h1 {
+    font-size: 1.6rem;
+  }
+  section {
+    padding: 25px;
+  }
+}
+</style>
 </head>
 <body>
 
 <header>
-  <div class="nav-container">
-    <h1>Dr. Brandon Hall</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+  <h1>Dr. Brandon Hall</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <main>
-  <section id="about" class="card">
+  <section id="about">
     <h2>About Me</h2>
     <p>I grew up in Montreal, attended McGill University for medical school, completed two years of orthopaedic surgery residency at University of Toronto, and am now a plastic surgery resident at University of Toronto. My interests include extremity reconstruction, particularly limb salvage.</p>
   </section>
 
-  <section id="cv" class="card">
+  <section id="cv">
     <h2>Curriculum Vitae</h2>
+    <h3>Education</h3>
     <ul>
-      <li><s
+      <li>MD — McGill University</li>
+    </ul>
+    <h3>Residency Training</h3>
+    <ul>
+      <li>Plastic Surgery Resident — University of Toronto</li>
+      <li>Orthopaedic Surgery Residency (PGY1–2) — University of Toronto</li>
+    </ul>
+    <h3>Research Interests</h3>
+    <ul>
+      <li>Extremity reconstruction</li>
+      <li>Limb salvage</li>
+      <li>Microsurgery</li>
+      <li>Trauma and complex limb pathology</li>
+    </ul>
+    <h3>Publications</h3>
+    <p>Coming soon.</p>
+    <h3>Presentations</h3>
+    <p>Coming soon.</p>
+    <h3>Awards</h3>
+    <p>Coming soon.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:brandon.hall@mail.utoronto.ca">brandon.hall@mail.utoronto.ca</a></p>
+    <p>LinkedIn | ResearchGate</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Dr. Brandon Hall</p>
+</footer>
+
+</body>
+</html>
